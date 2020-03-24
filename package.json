@@ -23,10 +23,7 @@
     "reactstrap": "^8.4.1"
   },
   "scripts": {
-    "client-install": "npm install",
     "start": "concurrently \"npm start\" \"node Server.js\"",
-    "server": "node Server.js",
-    "client": "npm start",
     "heroku-postbuild": "npm install && react-scripts start"
   },
   "eslintConfig": {
