@@ -22,7 +22,7 @@
 		"reactstrap": "^8.4.1"
 	},
 	"scripts": {
-		"start": "node index.js",
+		"start": "node Server.js",
 		"heroku-postbuild": "cd client && npm run build"
 	},
 	"eslintConfig": {
