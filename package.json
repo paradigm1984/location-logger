@@ -24,11 +24,11 @@
   },
   "scripts": {
     "client-install": "npm install",
-    "start": "node Server.js",
+    "start": "concurrently \"npm start\" \"node Server.js\"",
     "server": "nodemon Server.js",
     "client": "npm start",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "npm install && npm run build"
+    "dev": "concurrently \"npm start\" \"node Server.js\"",
+    "heroku-postbuild": "npm install && npm start"
   },
   "eslintConfig": {
     "extends": "react-app"
