@@ -23,8 +23,8 @@
     "reactstrap": "^8.4.1"
   },
   "scripts": {
-    "start": "concurrently \"npm start\" \"node Server.js\"",
-    "heroku-postbuild": "npm install && react-scripts start"
+    "start": "concurrently \"npm install\" \"npm start\" \"node Server.js\"",
+    "heroku-postbuild": "react-scripts start"
   },
   "eslintConfig": {
     "extends": "react-app"
